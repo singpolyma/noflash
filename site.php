@@ -47,6 +47,18 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 					<?php
 				}
 			?>
+			<?php
+				$uses = mysql_query("SELECT `use`,count(user_id) as count FROM uses WHERE url='$url' GROUP BY `use`", $db) or die(mysql_error($db));
+				$uses_output = array();
+				while($use = mysql_fetch_assoc($uses)) {
+					$uses_output[] = "<li>{$use['use']} (reported by {$use['count']} users)</li>";
+				}
+				if(count($uses_output)) {
+					echo '<h3>Flash is used on this site for:</h3><ul>';
+					echo implode("\n", $uses_output);
+					echo '</ul>';
+				}
+			?>
 			<ol>
 				<?php
 					$demands = mysql_query("SELECT login_id,time FROM demand,login_ids WHERE demand.user_id=login_ids.user_id AND url='$url' ORDER BY time DESC", $db);
