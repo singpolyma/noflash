@@ -6,6 +6,6 @@
 			<p>We want you to support standards.</p>
 		</div>
 
-		<p id="intro">Demand the end of required flash for websites you use every day, using a <a href="bookmarklet.php">simple bookmarklet</a>.
+		<p id="intro">Demand the end of required Adobe Flash for websites you use every day, using a <a href="bookmarklet.php">simple bookmarklet</a>.
 		   It's an easy, and active way to support web standards and accesibility.
 		</p>

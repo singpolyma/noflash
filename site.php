@@ -38,12 +38,12 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 			<?php
 				if($url == 'youtube.com') {
 					?>
-					<p>You may get around the flash requirements of this site with <a href="http://userscripts.org/scripts/show/34765">this Greasemonkey script</a>.</p>
+					<p>You may get around the Flash requirements of this site with <a href="http://userscripts.org/scripts/show/34765">this Greasemonkey script</a>.</p>
 					<?php
 				}
 				if($url == 'slideshare.com') {
 					?>
-					<p>You may get around the flash requirements of this site with <a href="http://userscripts.org/scripts/show/44525">this Greasemonkey script</a>.</p>
+					<p>You may get around the Flash requirements of this site with <a href="http://userscripts.org/scripts/show/44525">this Greasemonkey script</a>.</p>
 					<?php
 				}
 			?>
