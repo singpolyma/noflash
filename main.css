@@ -1,0 +1,53 @@
+html,body {
+	font-family: sans-serif;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#header {
+	padding: 1em;
+	border: 1px solid black;
+}
+#header #actions {
+	float: right;
+	font-size: 0.7em;
+}
+#intro {
+	font-size: 1.3em;
+}
+.openid {
+	background: white url('login/openid.gif') no-repeat;
+	background-position: 0 50%;
+	padding-left: 18px;
+	border: 1px solid black;
+	color: black;
+}
+#recent {
+	padding-top: 4em;
+	float: right;
+	width: 50%;
+}
+#recent h2 {
+	font-size: 1.3em;
+}
+#recent .byline {
+	font-size: 0.8em;
+}
+ol, ol li {
+	list-style-type: none;
+	padding: 0px;
+}
+#top10 {
+	float: left;
+	width: 50%;
+}
+.count {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#footer {
+	border-top: 1px dotted black;
+	padding-top: 1em;
+	clear: both;
+	font-size: 0.8em;
+	text-align: center;
+}
