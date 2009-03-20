@@ -37,7 +37,7 @@
 	</head>
 	<body>
 		<h2>How is Adobe Flash used on <?php echo $url; ?>?</h2>
-		<form method="post" action="" style="margin-right:1em;">
+		<form method="post" action="" id="uses-form" style="margin-right:1em;">
 			<input type="checkbox" name="uses[]" value="video/audio" id="video-audio" /> <label for="video-audio">Video/Audio</label>
 			<input type="checkbox" name="uses[]" value="navigation" id="navigation" /> <label for="navigation">Navigation</label>
 			<input type="checkbox" name="uses[]" value="visual effects" id="visual-effects" /> <label for="visual-effects">Visual Effects / Animations</label>

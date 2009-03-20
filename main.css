@@ -51,3 +51,14 @@ ol, ol li {
 	font-size: 0.8em;
 	text-align: center;
 }
+#uses-form input {
+	float: left;
+	clear: left;
+	margin-right: 0.5em;
+	display: block;
+	height: 1.1em;
+}
+#uses-form label {
+	display: block;
+	height: 1.5em;
+}
