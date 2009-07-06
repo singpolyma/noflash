@@ -1,0 +1,58 @@
+--
+-- Database: `singpolyma_noflash`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `demand`
+--
+
+CREATE TABLE IF NOT EXISTS "demand" (
+  "url" varchar(255) NOT NULL,
+  "user_id" int(11) NOT NULL,
+  "time" int(11) NOT NULL,
+  PRIMARY KEY  ("url","user_id"),
+  KEY "time" ("time")
+);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login_ids`
+--
+
+CREATE TABLE IF NOT EXISTS "login_ids" (
+  "login_id" varchar(255) NOT NULL,
+  "user_id" int(11) NOT NULL,
+  KEY "login_id" ("login_id","user_id")
+);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS "users" (
+  "user_id" int(11) NOT NULL auto_increment,
+  "session_id" char(40) NOT NULL,
+  "session_timeout" int(11) NOT NULL,
+  "nickname" char(50) NOT NULL,
+  PRIMARY KEY  ("user_id"),
+  KEY "session_id" ("session_id")
+);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `uses`
+--
+
+CREATE TABLE IF NOT EXISTS "uses" (
+  "user_id" int(11) NOT NULL,
+  "url" varchar(255) NOT NULL,
+  "use" enum('video/audio','navigation','visual effects','whole site','interactive content','advertisements','visualization','other') NOT NULL,
+  PRIMARY KEY  ("user_id","url")
+);
+
