@@ -1,0 +1,4 @@
+<?php
+   $db = mysql_connect("HOST", "USERNAME", "PASSWORD");//connect to database
+   mysql_select_db("DBNAME",$db);
+?>
