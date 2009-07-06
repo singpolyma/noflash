@@ -1,7 +1,8 @@
 <?php
 
+require_once dirname(__FILE__).'/setup.php';
+
 if($_COOKIE['user_openid'] && !$_COOKIE['noflash_session'] && !$_REQUEST['error']) {
-	require_once dirname(__FILE__).'/setup.php';
    $at = $_SERVER['SCRIPT_URI'].'?'.$_SERVER['QUERY_STRING'];
    header('Location: http://'.$_SERVER['HTTP_HOST'].'/'.APPROOT.'/login/try_auth.php?openid_identifier='.urlencode($_COOKIE['user_openid']).'&return_to='.urlencode($at),true,303);//login
    exit;

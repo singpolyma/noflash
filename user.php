@@ -1,4 +1,5 @@
 <?php
+require_once dirname(__FILE__).'/include/setup.php';
 $path_extra = dirname(__FILE__).'/include/';
 $path = ini_get('include_path');
 $path = $path_extra . PATH_SEPARATOR . $path;

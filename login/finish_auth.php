@@ -1,5 +1,7 @@
 <?php
 
+require_once dirname(dirname(__FILE__)).'/include/setup.php';
+
 require_once "common.php";
 session_start();
 

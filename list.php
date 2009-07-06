@@ -1,4 +1,5 @@
 <?php
+require_once dirname(__FILE__).'/include/setup.php';
 require_once dirname(__FILE__).'/include/connectDB.php';
 header('Content-Type: application/xhtml+xml; charset=utf-8');
 echo '<?xml version="1.0" encoding="utf-8"?>';
