@@ -1,6 +1,6 @@
 <?php
-require_once dirname(__FILE__).'/include/connectDB.php';
-require_once dirname(__FILE__).'/include/processCookie.php';
+require_once dirname(__FILE__).'/../include/connectDB.php';
+require_once dirname(__FILE__).'/../include/processCookie.php';
 header('Content-Type: application/xhtml+xml; charset=utf-8');
 echo '<?xml version="1.0" encoding="utf-8"?>';
 ?>
@@ -16,12 +16,12 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 	</head>
 
 	<body>
-		<?php require 'header.php' ?>
+		<?php require dirname(__FILE__).'/../header.php' ?>
 
 		<h2>Login</h2>
 		<p>You must login before submitting or voting for websites.</p>
 		<?php require(dirname(__FILE__).'/form.php'); ?>
 
-		<?php require 'footer.php' ?>
+		<?php require dirname(__FILE__).'/../footer.php' ?>
 	</body>
 </html>
