@@ -13,7 +13,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 	<body>
 		<?php require 'header.php' ?>
 			<h2>Drag the link below to your bookmark bar</h2>
-			<p><a href="javascript:void(open('http://<?php echo $_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>/submit.php?url=' + encodeURIComponent(window.location.href)));">Demand No Flash!</a></p>
+			<p><a href="javascript:void(open('http://<?php echo $_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>/submit.php?url='+encodeURIComponent(window.location.href)));">Demand No Flash!</a></p>
 		<?php require 'footer.php' ?>
 	</body>
 </html>
