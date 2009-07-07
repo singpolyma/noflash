@@ -5,15 +5,16 @@
       </div>
       <![endif]-->
 		<div id="header">
+			<?php require_once dirname(__FILE__).'/include/setup.php'; ?>
 			<?php if($LOGIN_DATA['user_id']) : ?>
-				<div id="actions"><a href="login/out.php">logout</a></div>
+				<div id="actions"><a href="<?php echo APPROOT; ?>login/out.php">logout</a></div>
 			<?php else : ?>
-				<div id="actions"><a href="login/">login</a></div>
+				<div id="actions"><a href="<?php echo APPROOT; ?>login/">login</a></div>
 			<?php endif; ?>
 			<h1><a href="index.php">Demand No Flash!</a></h1>
 			<p>We want you to support standards.</p>
 		</div>
 
-		<p id="intro">Demand the end of required Adobe Flash for websites you use every day, using a <a href="bookmarklet.php">simple bookmarklet</a>.
+		<p id="intro">Demand the end of required Adobe Flash for websites you use every day, using a <a href="<?php echo APPROOT; ?>bookmarklet.php">simple bookmarklet</a>.
 		   It's an easy, and active way to support web standards and accesibility.
 		</p>
