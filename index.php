@@ -10,9 +10,6 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 	<head>
 		<title>Demand No Flash!</title>
 		<link rel="stylesheet" media="screen" type="text/css" href="main.css" />
-		<!-- BEGIN ID SELECTOR -->
-		<script type="text/javascript" id="__openidselector" src="https://www.idselector.com/selector/d1d99ad63630ac21a2c37bdd6da2720826e0974e" charset="utf-8"></script>
-		<!-- END ID SELECTOR -->
 	</head>
 
 	<body>
@@ -39,7 +36,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 					<input type="submit" value="Demand" />
 				</form>
 			<?php else : ?>
-				<?php require(dirname(__FILE__).'/login/form.php'); ?>
+				<?php //require(dirname(__FILE__).'/login/form.php'); ?>
 			<?php endif; ?>
 
 			<h2>Latest Demands</h2>

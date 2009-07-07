@@ -7,6 +7,8 @@
 		<div id="header">
 			<?php if($LOGIN_DATA['user_id']) : ?>
 				<div id="actions"><a href="login/out.php">logout</a></div>
+			<?php else : ?>
+				<div id="actions"><a href="login/">login</a></div>
 			<?php endif; ?>
 			<h1><a href="index.php">Demand No Flash!</a></h1>
 			<p>We want you to support standards.</p>
