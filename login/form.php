@@ -6,8 +6,6 @@
 	if(!$LOGIN_DATA['user_id']) : ?>
    <form id="login" method="get" action="<?php echo APPROOT; ?>login/try_auth.php"><div>
 
-		<div>Login</div>
-
 		<input type="hidden" name="action" value="<?php echo $login_action ? $login_action : 'verify'; ?>" />
 		<input type="hidden" name="return_to" value="<?php echo $_REQUEST['return_to'] ? htmlentities($_REQUEST['return_to']) : htmlentities($_SERVER['SCRIPT_URI'].'?'.$_SERVER['QUERY_STRING']); ?>" />
    	<input type="text" class="openid" id="openid_identifier" name="openid_identifier" value="<?php echo $_REQUEST['openid_identifier'] ? htmlentities($_REQUEST['openid_identifier']) : ''; ?>" />

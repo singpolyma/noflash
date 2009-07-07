@@ -13,6 +13,12 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 		<!-- BEGIN ID SELECTOR -->
 		<script type="text/javascript" id="__openidselector" src="https://www.idselector.com/selector/d1d99ad63630ac21a2c37bdd6da2720826e0974e" charset="utf-8"></script>
 		<!-- END ID SELECTOR -->
+		<style type="text/css">
+			form#login {
+				text-align: center;
+				margin-bottom: 4em;
+			}
+		</style>
 	</head>
 
 	<body>
