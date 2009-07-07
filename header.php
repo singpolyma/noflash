@@ -11,7 +11,7 @@
 			<?php else : ?>
 				<div id="actions"><a href="<?php echo APPROOT; ?>login/">login</a></div>
 			<?php endif; ?>
-			<h1><a href="index.php">Demand No Flash!</a></h1>
+			<h1><a href="<?php echo APPROOT; ?>" rel="home">Demand No Flash!</a></h1>
 			<p>We want you to support standards.</p>
 		</div>
 
