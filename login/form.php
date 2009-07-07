@@ -10,7 +10,7 @@
 
 		<input type="hidden" name="action" value="<?php echo $login_action ? $login_action : 'verify'; ?>" />
 		<input type="hidden" name="return_to" value="<?php echo $_REQUEST['return_to'] ? htmlentities($_REQUEST['return_to']) : htmlentities($_SERVER['SCRIPT_URI'].'?'.$_SERVER['QUERY_STRING']); ?>" />
-   	<input type="text" onclick="this.select();" class="openid" id="openid_identifier" name="openid_identifier" value="<?php echo $_REQUEST['openid_identifier'] ? htmlentities($_REQUEST['openid_identifier']) : ''; ?>" />
+   	<input type="text" class="openid" id="openid_identifier" name="openid_identifier" value="<?php echo $_REQUEST['openid_identifier'] ? htmlentities($_REQUEST['openid_identifier']) : ''; ?>" />
    	<input type="submit" value="&raquo;" style="display:none;" />
 
    </div></form>
